@@ -1,0 +1,37 @@
+{
+  "name": "react-hook-remotedata",
+  "version": "0.0.0",
+  "description": "## Install",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && microbundle --external react --globals react=React --strict --no-compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YannickDot/react-hook-remotedata.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "remotedata",
+    "adt",
+    "fantasyland"
+  ],
+  "author": "Yannick Spark <sparky.creativespace@gmail.com> (https://sparkyspace.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YannickDot/react-hook-remotedata/issues"
+  },
+  "homepage": "https://github.com/YannickDot/react-hook-remotedata#readme",
+  "peerDependencies": {
+    "daggy": "^1.4.0",
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
+}
