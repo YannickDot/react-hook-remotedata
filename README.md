@@ -4,11 +4,15 @@ A set of react hooks to fetch remote data following the pattern exposed in [Slay
 
 ## Install
 
+```
 npm install --save daggy react react-hook-remotedata
+```
 
 ## Examples
 
 ### useRemoteData
+
+This hook gives you a RemoteData object + a set of callbacks to update its state
 
 ```js
 import React, { useEffect } from "react";
@@ -43,6 +47,8 @@ function fetchSomething() {
 ```
 
 ### useFetchRemoteData
+
+For this hook, you provide a promise returning function, and when you call `runFetch()`, the RemoteData object state is updated for you.
 
 ```js
 import React, { useEffect } from "react";
